@@ -101,9 +101,18 @@ input:hover[type="reset"] {
 }
 
 .aside{
-    
+    width: 473px;
+    height: 114px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
 }
 
 .text{
+    margin-right: 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
     display: inline-block;
 }
