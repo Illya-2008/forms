@@ -13,10 +13,41 @@
     <div class="wrapper">
         <h1>Форми</h1>
         <div class="simple-form">
-            <h1>01. проста форма</h1>
+            <h2>01. ПРОСТА ФОРМА</h2>
             <form action="php/server.php">
-                <input type="text">
+                <input type="text" placeholder="Введіть ім’я">
+                <input type="text" placeholder="Email">
+                <select>
+                    <option>Ваше місто</option>
+                    <option>Хмельницький</option>
+                </select>
+                <textarea placeholder="Повідомлення"></textarea>
+                <input type="reset" value="Зареєструватися">
             </form>
+        </div>
+        <div class="line"></div>
+        <div class="elements">
+            <h2>02. ЕЛЕМЕНТИ</h2>
+            <form action="php/sever.php">
+                <ul class="radio">
+                    <li><input type="radio" name="radio"> Нова Пошта</li>
+                    <li><input type="radio" name="radio"> Кур’єр</li>
+                    <li><input type="radio" name="radio" disabled> Самовивіз</li>
+                </ul>
+                <ul class="checkbox">
+                    <li><input type="checkbox"> Прочитав умови договору</li>
+                    <li><input type="checkbox"> Згідний з ПДВ 9%</li>
+                    <li><input type="checkbox" disabled> Отримувати новини на ел. пошту</li>
+                </ul>
+            </form>
+            <div class="aside">
+                <p class="text">Статус</p>
+                    <input type="checkbox"> Новинки
+                    <input type="checkbox"> Акційні товари
+                    <input type="checkbox"> Розпродаж
+                <p class="text">Дата</p>
+                    <input type="text" placeholder="2018-03-17">
+            </div>
         </div>
     </div>
 </body>
