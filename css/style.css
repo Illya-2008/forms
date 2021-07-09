@@ -1,0 +1,22 @@
+ body{
+
+ }
+
+ .wrapper{
+    margin: 0;
+    min-width: 990px;
+ }
+
+ .clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ h1{
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+ }
