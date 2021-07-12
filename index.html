@@ -26,9 +26,9 @@
             </form>
         </div>
         <div class="line"></div>
-        <div class="elements">
+        <div class="elements clear">
             <h2>02. ЕЛЕМЕНТИ</h2>
-            <form action="php/sever.php">
+            <form class="elements-form" action="php/sever.php">
                 <ul class="radio">
                     <li><input type="radio" name="radio"> Нова Пошта</li>
                     <li><input type="radio" name="radio"> Кур’єр</li>
@@ -39,15 +39,37 @@
                     <li><input type="checkbox"> Згідний з ПДВ 9%</li>
                     <li><input type="checkbox" disabled> Отримувати новини на ел. пошту</li>
                 </ul>
-            </form>
-            <div class="aside">
-                <p class="text">Статус</p>
+                <div class="aside">
+                    <p class="text">Статус</p>
                     <input type="checkbox" name="checkbox"> Новинки
                     <input type="checkbox" name="checkbox"> Акційні товари
                     <input type="checkbox" name="checkbox"> Розпродаж
-                <p class="text">Дата</p>
-                    <input type="text" placeholder="2018-03-17">
-            </div>
+                    <p class="text">Дата</p>
+                    <input type="date" value="2018-03-17">
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="checkbockes">
+            <h2 class="checkboxes-h2">03. СТИЛІЗОВАНІ ЧЕКБОКСИ</h2>
+            <ul class="man-woman">
+                <li><input class="man" type="checkbox" id="man" name="man-woman">
+                    <label for="man">Чоловік</label></li>
+                <li><input class="woman" type="checkbox" id="woman" name="man-woman">
+                    <label for="woman">Жінка</label></li>
+            </ul>
+            <ul class="button-checkbox">
+                <li><input class="button" type="checkbox" id="button1">
+                    <label for="button1">Отримувати новини</label></li>
+                <li><input class="button" type="checkbox" id="button2">
+                    <label for="button2">Купити додому ковбаси</label></li>
+                <li><input class="button" type="checkbox" id="button3">
+                    <label for="button3">Включити світло</label></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="form-table">
+            <h2>04. ФОРМА ТАБЛИЦЕЮ</h2>
         </div>
     </div>
 </body>
