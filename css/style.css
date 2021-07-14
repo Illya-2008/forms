@@ -36,9 +36,43 @@ h2{
     font-family: "Roboto";
 }
 
+.label-menu option:first-child{
+    display: none;
+}
+
+.label-menu,
+.label-menu select{
+    position: relative;
+}
+
+.label-menu::before{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: 5px solid transparent;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.label-menu select{
+    border-radius: 3px;
+    padding: 15px 20px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.label-menu{
+    margin-bottom: 10px;
+}
+
 textarea,
 select,
 input[type="text" i] {
+    outline: none;
     padding: 14px 0 12px 14px;
     width: 312px;
     margin-bottom: 10px;
@@ -86,7 +120,7 @@ input:hover[type="reset"] {
 }
 
 .checkbox,
-.radio{
+.radio-ul{
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -94,8 +128,55 @@ input:hover[type="reset"] {
     list-style: none;
 }
 
-.radio{
+.checkbox{
+    margin-right: 45px;
+}
+
+.radio-ul{
     margin-right: 70px;
+}
+
+.label-radio{
+    margin: 0 0 10px 0;
+}
+
+input[type="radio" i] {
+    display: none;
+}
+
+.radio+label{
+    position: relative;
+    padding-left: 25px;
+}
+
+.radio+label:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.radio+label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.radio:checked+label::before{
+    border: 1px solid #3e6aff;
+}
+
+.radio:checked+label::after{
+    background-color: #3e6aff;
 }
 
 .checkbox li,
