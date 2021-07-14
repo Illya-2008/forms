@@ -132,6 +132,10 @@ input:hover[type="reset"] {
     margin-right: 45px;
 }
 
+.disabled-radio{
+    display: inline-block;
+}
+
 .radio-ul{
     margin-right: 70px;
 }
