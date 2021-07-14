@@ -109,7 +109,6 @@ input:hover[type="reset"] {
 }
 
 .aside{
-    float: right;
     width: 473px;
     display: inline-block;
     border-radius: 3px;
@@ -155,6 +154,7 @@ input[type="date" i] {
 }
 
 .man+label{
+    font-weight: bold;
     position: relative;
     padding-left: 80px;
 }
@@ -163,40 +163,21 @@ input[type="date" i] {
     content: "";
     position: absolute;
     left: 2px;
-    top: -25px;
+    top: -24px;
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    background-color: #e8e8e8;
-    transition: all 1s ease;
+    background-image: url(../img/man.webp);
+    transition: all 0.3s ease;
+}
+
+.man:checked+label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e6aff;
 }
 
 .man:checked+label:before{
-    background-color: #0f0;
-}
-
-.man+label:after{
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 16px;
-    width: 45px;
-    height: 60px;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 17px;
-    background-image: url(../img/man.webp);
-}
-
-.woman+label:after{
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 16px;
-    width: 41px;
-    height: 60px;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    background-image: url(../img/woman.webp);
+    background-image: url(../img/color-man.webp);
 }
 
 .woman{
@@ -205,9 +186,17 @@ input[type="date" i] {
 }
 
 .woman+label{
+    font-weight: bold;
     position: relative;
     padding-left: 85px;
 }
+
+.woman:checked+label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e6aff;
+}
+
 
 .woman+label:before{
     content: "";
@@ -216,13 +205,18 @@ input[type="date" i] {
     top: -25px;
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    background-color: #e8e8e8;
-    transition: all 1s ease;
+    background-image: url(../img/woman.webp);
+    transition: all 0.3s ease;
 }
 
 .woman:checked+label:before{
-    background-color: #0f0;
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: -25px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/color-woman.webp);
 }
 
 .button-checkbox{
@@ -256,7 +250,7 @@ label{
 }
 
 .button:checked+label::before{
-    background-color: #0f0;
+    background-color: #3e6aff;
 }
 
 .button+label:after{
