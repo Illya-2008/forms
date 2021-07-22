@@ -186,7 +186,8 @@ select {
 textarea {  
     font-family: inherit; 
     resize: vertical; 
-    height: 130px;  
+    min-height: 130px;
+    max-height: 130px;
 }  
   
 .registery {  
@@ -530,7 +531,12 @@ input[type="file"i] {
     color: #fff;  
     font-weight: bold;  
     background-color: #3e6aff;  
-}  
+} 
+
+.label-file:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+}
   
 .white {  
     color: white;  
