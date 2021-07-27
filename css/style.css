@@ -350,7 +350,8 @@ input[type="radio"i] {
   
 .aside {  
     width: 473px;  
-    display: inline-block;  
+    display: inline-block; 
+    padding: 10px 0; 
     border-radius: 3px;  
     background-color: #f7f7f7;  
     border: 1px solid #e5e5e5;  
@@ -365,13 +366,20 @@ input[type="radio"i] {
     display: inline-block;  
 }  
   
-input[type="date"i] {  
+input[type="date" i] {  
     width: 130px;  
     height: 30px;  
+    outline: none;
+    border: 1px solid #ccc;
     margin-left: 15px;  
     margin-bottom: 20px;  
     padding-left: 10px;  
-}  
+} 
+
+input:focus[type="date" i] {
+    border: 1px solid #3e6aff;
+    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+}
   
 .man-woman {  
     display: inline-block;  
@@ -570,8 +578,6 @@ h3 {
   
 td .adress {  
     width: 630px;  
-    position: absolute;  
-    top: 2365px;  
 }  
   
 .fixed-form{  
